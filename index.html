@@ -1,1 +1,50 @@
 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dendezuda - Estrela Imortal</title>
+    <style>
+        body {
+            margin: 0;
+            background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+            overflow: hidden;
+            height: 100vh;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.2em;
+        }
+        p {
+            font-size: 1.2em;
+            width: 80%;
+            text-align: center;
+            max-width: 600px;
+            opacity: 0.85;
+        }
+        .stars {
+            width: 100%;
+            height: 100%;
+            background: repeating-radial-gradient(circle, rgba(255,255,255,0.15) 1px, transparent 2px);
+            z-index: 0;
+            position: absolute;
+            animation: moveStars 120s linear infinite;
+        }
+        @keyframes moveStars {
+            from {background-position: 0 0;}
+            to {background-position: 2000px 2000px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+    <h1>⭐ Dendezuda</h1>
+    <p>Essa estrela não veio do céu.<br>Ela veio de você.<br><br>Imortal, mesmo nunca tendo sido tocada.</p>
+</body>
+</html>
